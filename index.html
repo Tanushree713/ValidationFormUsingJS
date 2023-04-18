@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js3</title>
+    <style>
+      .container{
+        border: 3px solid #424141;
+        height: 330px;
+        width: 750px;
+        margin-left:20% ;
+      }
+      h1{
+        font-size: 32px;
+        margin-left: 27%;
+       
+      }
+      .line{
+        height: 10px;
+        width: 350px;
+        border: 2px solid #0000ffd1;
+        margin-bottom: 60px;
+        background-color: rgba(0, 0, 255, 0.826);
+        margin-left: 24%;
+      }
+      #form{
+        margin-left: 1%;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      #passwords{
+        height: 25px;
+        width: 350px;
+        border: 1.2px solid black;
+        border-radius: 8px;
+      }
+      #passwordss{
+        height: 25px;
+        width: 332px;
+        border: 1.2px solid black;
+        border-radius: 8px;
+      }
+      #submit{
+        font-size: 14px;
+        font-weight: 550;
+        padding: 8px 15px;
+        border: 2px solid rgba(0, 0, 0, 0.8);
+        border-radius: 12px;
+        margin-left: 50%;
+      }
+      #messages{
+        color: #ff0000ce;
+      }
+      #messagess{
+        color: #ff0000ce;
+      }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Password Validator</h1>
+    <div class="line"> </div>
+    <form onsubmit="return myfun()" id="form">
+       New Password: &nbsp;&nbsp;&nbsp;&nbsp;   <input type="password" id="passwords" value="" >
+        <span id="messages"> </span>
+        <br><br>
+        Confirm Password: &nbsp;&nbsp;&nbsp;    <input type="password" id="passwordss" value="" >
+        <span id="messagess"> </span>
+        <br><br>
+        <input type="submit" id="submit" value="Submit">
+      </div>
+    </form>
+    <script src="./server.js"></script>
+</body>
+</html>
